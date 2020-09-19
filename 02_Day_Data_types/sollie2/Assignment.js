@@ -41,3 +41,49 @@ console.log(challenge.lastIndexOf());
 let a = " Math ";
 console.log(a.trim(" "));
 console.log(challenge.startsWith());
+
+/*Using console.log() print out the following statement:
+
+The quote 'There is no exercise better for the heart than reaching down and lifting people up.' by John Holmes teaches us to help one another.
+Using console.log() print out the following quote by Mother Teresa:
+
+"Love is not patronizing and charity isn't about pity, it is about love. Charity and love are the same -- with charity you give love, so don't just give money but reach out your hand instead."
+Check if typeof '10' is exactly equal to 10. If not make it exactly equal.
+
+Check if parseFloat('9.8') is equal to 10 if not make it exactly equal with 10.
+
+Check if 'on' is found in both python and jargon
+
+I hope this course is not full of jargon. Check if jargon is in the sentence.
+
+Generate a random number between 0 and 100 inclusively.
+
+Generate a random number between 50 and 100 inclusively.
+
+Generate a random number between 0 and 255 inclusively.
+
+Access the 'JavaScript' string characters using a random number.
+
+Use console.log() and escape characters to print the following pattern.
+
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125 */
+
+let para1 = 'There is no exercise better for the heart than reaching down and lifting people up. by John Holmes teaches us to help one another.';
+let para2 = 'Love is not patronizing and charity isn\'t about pity, it is about love. Charity and love are the same -- with charity you give love, so don\'t just give money but reach out your hand instead.';
+console.log(para1);
+console.log(para2);
+console.log(typeof 10);
+console.log(Math.round(parseFloat(9.8)));
+
+console.log(Math.random())
+console.log(Math.round(Math.random() * (100 - 0) + 0));
+console.log(Math.round(Math.random() * (100 - 50) + 50));
+console.log(Math.round(Math.random() * (255 - 0) + 0));
+let a = 'JavaScript';
+console.log(a[4]);
+
+console.log('1 1 1 1 1\n2 1 2 4 8\n3 1 3 9 27\n4 1 4 16 64\n51 5 25 125');
