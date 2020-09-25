@@ -157,7 +157,27 @@ sumEvenNumbers;
 sumOddNumbers;
 
 // Develop a small script which generate array of 5 random numbers
+function randomNum(min,max){
+  let Num = [];
+  for(let i = 0; i < 5; i++){
+    Num.push(Math.floor(Math.random() * max) + min);
+  }
+    return Num;
+}
+console.log(randomNum(0,5));
 
+/*Develop a small script which generate array of 
+5 random numbers and the numbers must be unique*/
 
+/*Develop a small script
+ which generate a six characters random id:*/
 
-
+ function id(length){
+  var result = '';
+  var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+  for (var i= 0; i < length; i++){
+  result = result + characters.charAt(Math.floor(Math.random() * characters.length));
+  
+  }return result;
+   }
+   console.log(id(6));
