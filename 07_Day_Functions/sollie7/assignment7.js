@@ -45,6 +45,15 @@ as follows: area = π x r x r. Write a function which calculates areaOfCircle */
   } 
 console.log(celToFah(20));
 
+/* Declare a function name printArray. It takes array as a parameter and 
+it prints out each value of the array. */
+
+function printArray(arr) {
+  for (let i = 0; i <  arr.length; i++) 
+    console.log(arr[i])
+}
+console.log(printArray([2,3,4,5]))
+
 
 
 
