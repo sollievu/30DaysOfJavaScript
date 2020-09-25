@@ -1,71 +1,51 @@
-const users = {
-    Alex: {
-      email: 'alex@alex.com',
-      skills: ['HTML', 'CSS', 'JavaScript'],
-      age: 20,
-      isLoggedIn: false,
-      points: 30
-    },
-    Asab: {
-      email: 'asab@asab.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
-      age: 25,
-      isLoggedIn: false,
-      points: 50
-    },
-    Brook: {
-      email: 'daniel@daniel.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
-      age: 30,
-      isLoggedIn: true,
-      points: 50
-    },
-    Daniel: {
-      email: 'daniel@alex.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
-    },
-    John: {
-      email: 'john@john.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
-      age: 20,
-      isLoggedIn: true,
-      points: 50
-    },
-    Thomas: {
-      email: 'thomas@thomas.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'React'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
-    },
-    Paul: {
-      email: 'paul@paul.com',
-      skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
-      age: 20,
-      isLoggedIn: false,
-      points: 40
+
+function fullName(first,last){
+    let full = first + ' ' + last;
+    return full
     }
-  }
+    console.log(fullName('Sollie','Vu'));
 
-console.log(Object.keys(users))
-  function isUserMERN(data) {
-      const keyOfData = Object.keys(data)
-      const MERNUser = []
-      const NotMERNUser =[]
-      for (let i = 0; i < keyOfData.length; i++){
-        let mayCoPhaiLaMERN = data[keyOfData[i]]['skills'].includes('MongoDB') && data[keyOfData[i]]['skills'].includes('Express') && data[keyOfData[i]]['skills'].includes('React') && data[keyOfData[i]]['skills'].includes('Node') 
-        if (mayCoPhaiLaMERN) {
-            MERNUser.push(keyOfData[i])
-        } else {
-            NotMERNUser.push(keyOfData[i])
-        }
-      }
-      return {MERN: MERNUser, NotMERN: NotMERNUser}
-  }
 
-  console.log(isUserMERN(users))
- 
-  
+function sum(num1,num2){ 
+    let sumNum = num1 + num2;
+    return sumNum
+}
+console.log(sum(2,7));
+
+/*An area of a rectangle is calculated as follows: 
+area = length x width. Write a function which 
+calculates areaOfRectangle.*/
+
+function areaOfRectangle(a,b){ 
+    let area = a * b;
+    return area;
+}
+console.log(areaOfRectangle(5,7));
+
+/*A volume of a rectangular prism is calculated as follows: 
+volume = length x width x height. Write a function which calculates volumeOfRectPrism.*/
+function volumeOfRectPrism(a,b,c){ 
+    let volume = a * b * c;
+    return volume
+}
+console.log(volumeOfRectPrism(4,5,7));
+
+/* Area of a circle is calculated
+as follows: area = π x r x r. Write a function which calculates areaOfCircle */
+  function areaOfCircle(r) {
+    let area = r * r * Math.PI
+    return area
+  } console.log(areaOfCircle(5))
+
+/* Temperature in oC can be converted to oF using this formula:
+ oF = (oC x 9/5) + 32. Write a function which convert oC to oF convertCelciusToFahrenheit*/
+ function celToFah(celsius) {
+    let fahrenheit = (celsius * (9/5)) + 32;
+    return fahrenheit;
+  } 
+console.log(celToFah(20));
+
+
+
+
+
