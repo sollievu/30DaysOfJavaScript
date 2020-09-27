@@ -50,25 +50,25 @@ const users = {
     }
   }
 
-console.log(Object.keys(users))
-function isUseMERN(data){
-    let keyOfdata
-}
-  function isUserMERN(data) {
-      const keyOfData = Object.keys(data)
-      const MERNUser = []
-      const NotMERNUser =[]
-      for (let i = 0; i < keyOfData.length; i++){
-        let mayCoPhaiLaMERN = data[keyOfData[i]]['skills'].includes('MongoDB') && data[keyOfData[i]]['skills'].includes('Express') && data[keyOfData[i]]['skills'].includes('React') && data[keyOfData[i]]['skills'].includes('Node') 
-        if (mayCoPhaiLaMERN) {
-            MERNUser.push(keyOfData[i])
-        } else {
-            NotMERNUser.push(keyOfData[i])
-        }
-      }
-      return {MERN: MERNUser, NotMERN: NotMERNUser}
+  function isMERNSkills(checkingArray){
+    if(!checkingArray.includes('MongoDB')) {
+      return false;
+    }
+    if(!checkingArray.includes('Express')) {
+      return false;
+    }
+    if(!checkingArray.includes('React')) {
+      return false;
+    }
+    if(!checkingArray.includes('Node')) {
+      return false;
+    }
+    return true;
   }
-
-  console.log(isUserMERN(users))
- 
   
+  for (const userName in users) {
+    const userSkills = users[userName].skills;
+    if(isMERNSkills(userSkills)) {
+      console.log(userName);
+    }
+  }
