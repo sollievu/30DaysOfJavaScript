@@ -50,25 +50,29 @@ const users = {
     }
   }
 
-  function isMERNSkills(checkingArray){
-    if(!checkingArray.includes('MongoDB')) {
+
+
+  function isMERNSkills(userName){
+    if(!userName.includes('MongoDB')) {
       return false;
     }
-    if(!checkingArray.includes('Express')) {
+    if(!userName.includes('Express')) {
       return false;
     }
-    if(!checkingArray.includes('React')) {
+    if(!userName.includes('React')) {
       return false;
     }
-    if(!checkingArray.includes('Node')) {
+    if(!userName.includes('Node')) {
       return false;
     }
     return true;
   }
   
   for (const userName in users) {
-    const userSkills = users[userName].skills;
-    if(isMERNSkills(userSkills)) {
+    const userSkills = users[userName][skills];
+    if (isMERNSkills(userSkills)) {
       console.log(userName);
     }
   }
+ 
+ 

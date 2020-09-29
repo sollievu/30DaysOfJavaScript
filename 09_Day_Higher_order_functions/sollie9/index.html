@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>timer</title>
+
+  <script>
+    var intervalId;
+    var duration = 0;
+ 
+    function myTimer() {
+        intervalId = setInterval(countdown, 1000);
+    }
+ 
+    function countdown() {
+      var elem = document.getElementById('countdownbox');
+      
+      elem.innerHTML = duration;
+      duration +=1;
+      
+    }
+ 
+    function stopTextColor() {
+      clearInterval(intervalId);
+    }
+  </script>
+</head>
+ 
+<body onload="myTimer();">
+  <div id="countdownbox">
+      
+  </div>
+
+  <button onclick="stopTextColor();">Stop</button>
+</body>
+</html>
