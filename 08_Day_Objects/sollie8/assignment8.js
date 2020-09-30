@@ -69,10 +69,11 @@ const users = {
   }
   
   for (const userName in users) {
-    const userSkills = users[userName][skills];
+    const userSkills = users[userName].skills;
     if (isMERNSkills(userSkills)) {
       console.log(userName);
     }
   }
  
- 
+ const sollie = Object.assign({},users);
+ console.log(sollie);
