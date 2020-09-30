@@ -31,3 +31,10 @@ console.log(max1);
 
 //map
 
+//setInterval
+let sayHiId = setInterval(sayHi,2000)
+function sayHi() { 
+    console.log(sayHi)
+}
+setInterval(sayHi,2000)
+clearInterval(sayHiId)
