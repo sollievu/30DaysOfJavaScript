@@ -14,10 +14,13 @@ for large arrays, with very large arrays of 4000 items or
 more, a for loop is the 
 fastest method by far, so keep that in mind. It may be ugly,
  but it works.
+ 
 */
 
-let max = Math.max.apply(null, numArr)
+let max = Math.max(...numArr)
 console.log(max)
+let min = Math.min(...numArr)
+console.log(min)
 
 //for loop
 let max1 = 0;
@@ -31,10 +34,11 @@ console.log(max1);
 
 //map
 
+
 //setInterval
-let sayHiId = setInterval(sayHi,2000)
-function sayHi() { 
-    console.log(sayHi)
-}
-setInterval(sayHi,2000)
-clearInterval(sayHiId)
+// let sayHiId = setInterval(sayHi,2000)
+// function sayHi() { 
+//     console.log(sayHi)
+// }
+// setInterval(sayHi,2000)
+// clearInterval(sayHiId)
