@@ -31,7 +31,8 @@ function volumeOfRectPrism(a,b,c){
 console.log(volumeOfRectPrism(4,5,7));
 
 /* Area of a circle is calculated
-as follows: area = π x r x r. Write a function which calculates areaOfCircle */
+as follows: area = π x r x r. Write a function which 
+calculates areaOfCircle */
   function areaOfCircle(r) {
     let area = r * r * Math.PI
     return area
