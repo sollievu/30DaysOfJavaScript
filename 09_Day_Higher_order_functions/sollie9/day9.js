@@ -205,6 +205,23 @@ draw2(5)
 
 
 
+let numArr = [1, 2, 3];
+let red = numArr.reduce((acc, cur) =>
+    acc - cur, 0
+)
+console.log(red);
 
 
+let score = [80,50,20,30,77]
+let scorePass = score.find((scoreMin) =>
+scoreMin >= 70
+)
+console.log(scorePass)
 
+const scores = [
+    { name: 'Asabeneh', score: 95 },
+    { name: 'Mathias', score: 80 },
+    { name: 'Elias', score: 50 },
+    { name: 'Martha', score: 85 },
+    { name: 'John', score: 100 },
+  ]
