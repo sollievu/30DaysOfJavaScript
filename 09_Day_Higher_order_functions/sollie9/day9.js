@@ -212,9 +212,9 @@ let red = numArr.reduce((acc, cur) =>
 console.log(red);
 
 
-let score = [80,50,20,30,77]
+let score = [80, 50, 20, 30, 77]
 let scorePass = score.find((scoreMin) =>
-scoreMin >= 70
+    scoreMin >= 70
 )
 console.log(scorePass)
 
@@ -224,4 +224,52 @@ const scores = [
     { name: 'Elias', score: 50 },
     { name: 'Martha', score: 85 },
     { name: 'John', score: 100 },
-  ]
+]
+
+const countries2 = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand']
+const names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const products = [
+    { product: 'banana', price: 3 },
+    { product: 'mango', price: 6 },
+    { product: 'potato', price: ' ' },
+    { product: 'avocado', price: 8 },
+    { product: 'coffee', price: 10 },
+    { product: 'tea', price: '' },
+]
+
+
+countries2.forEach(print =>
+    console.log(print))
+
+names.forEach(name => console.log(name))
+
+numbers.forEach(number => console.log(number))
+
+
+let upperCountries = countries2.map(function (country) {
+    return country.toUpperCase()
+})
+
+console.log(upperCountries)
+
+let numSquare = numbers.map(function (num1) {
+    return num1 * num1
+})
+console.log(numSquare)
+
+let namestoUpperCase = names.map(function (na) {
+    return na.toUpperCase()
+})
+console.log(namestoUpperCase)
+
+let hasLand = countries2.filter(function (countryHasLand) {
+    return countryHasLand.includes("land")
+})
+
+console.log(hasLand)
+
+
+
+
+
