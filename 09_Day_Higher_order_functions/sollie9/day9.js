@@ -269,7 +269,8 @@ let hasLand = countries2.filter(function (countryHasLand) {
 
 console.log(hasLand)
 
-
+let totalNum = numbers.reduce(function(acc,cur) {return acc + cur});
+console.log(totalNum)
 
 
 
