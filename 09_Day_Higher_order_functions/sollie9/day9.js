@@ -269,8 +269,20 @@ let hasLand = countries2.filter(function (countryHasLand) {
 
 console.log(hasLand)
 
-let totalNum = numbers.reduce(function(acc,cur) {return acc + cur});
+let totalNum = numbers.reduce(function (acc, cur) { return acc + cur });
 console.log(totalNum)
 
 
+countries2.unshift("Estonia")
+let requiredSentence = countries2.reduce(function (acc, cur) {
+    let newStr = acc + ", " + cur
+    return newStr + " are north European countries"
+})
+console.log(requiredSentence);
 
+
+
+const result = countries2.findIndex((country) =>
+    country == "Finland"
+    - 1)
+console.log(result)
